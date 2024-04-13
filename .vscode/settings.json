@@ -13,10 +13,10 @@
     "pubspec.yaml": "pubspec.lock, pubspec_overrides.yaml"
   },
   "github.copilot.enable": {
-    "*": false
+    "*": true,
   },
-  "github.copilot.editor.enableCodeActions": false,
-  "github.copilot.editor.enableAutoCompletions": false,
+  "github.copilot.editor.enableCodeActions": true,
+  "github.copilot.editor.enableAutoCompletions": true,
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
   "files.associations": {
