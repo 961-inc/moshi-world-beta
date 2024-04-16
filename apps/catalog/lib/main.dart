@@ -1,7 +1,6 @@
 import 'package:catalog/main.directories.g.dart';
 import 'package:cores_designsystem/themes.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:widgetbook/widgetbook.dart';
 import 'package:widgetbook_annotation/widgetbook_annotation.dart';
@@ -73,10 +72,6 @@ class WidgetbookApp extends StatelessWidget {
         AlignmentAddon(),
         TextScaleAddon(
           scales: [1.0, 2.0],
-        ),
-        BuilderAddon(
-          name: 'ProviderScope',
-          builder: (context, child) => ProviderScope(child: child),
         ),
       ],
     );
