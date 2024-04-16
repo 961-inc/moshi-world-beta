@@ -124,7 +124,7 @@ class __$$QuizForListImplCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$QuizForListImpl with QuizSummeryData implements _QuizForList {
+class _$QuizForListImpl implements _QuizForList {
   const _$QuizForListImpl({required this.heading, this.answerAnalysis});
 
   factory _$QuizForListImpl.fromJson(Map<String, dynamic> json) =>

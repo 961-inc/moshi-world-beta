@@ -6,8 +6,8 @@ part 'quiz_list.freezed.dart';
 part 'quiz_list.g.dart';
 
 @freezed
-class QuizForList with _$QuizForList, QuizSummeryData {
-  @With<QuizSummeryData>()
+class QuizForList with _$QuizForList implements QuizSummeryData {
+  @Implements<QuizSummeryData>()
   const factory QuizForList({
     required String heading,
     AnswerAnalysis? answerAnalysis,
@@ -29,6 +29,7 @@ class QuizList with _$QuizList {
 
 @riverpod
 QuizList quizList(QuizListRef ref) {
+  // TODO(@Yamasaki-pan961): クイズリストの取得処理を実装する
   return _quizList;
 }
 
